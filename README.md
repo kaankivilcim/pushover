@@ -14,8 +14,8 @@ import (
 )
 
 func main() {
-    // Create a new message for a specific user
-    m := Pushover.New("api_token", "user_key")
+    // Create a new message for a target user/group key
+    m := Pushover.New("api_token", "user_group_key")
 
     // Send the message
     resp, err := m.Send("title", "message")
